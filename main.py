@@ -1,7 +1,7 @@
 """
 Main entry point for the Todo List application
 """
-from todo_app.ui.cli import TodoCLI
+from src.ui.cli import TodoCLI
 
 def main():
     app = TodoCLI()
