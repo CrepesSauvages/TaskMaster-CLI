@@ -10,7 +10,13 @@ class Menu:
             '2': ('Afficher toutes les tâches', None),
             '3': ('Marquer une tâche comme terminée', None),
             '4': ('Supprimer une tâche', None),
-            '5': ('Quitter', None)
+            '5': ('Ajouter une sous-tâche', None),
+            '6': ('Rechercher des tâches', None),
+            '7': ('Filtrer les tâches', None),
+            '8': ('Exporter les tâches', None),
+            '9': ('Importer des tâches', None),
+            '10': ('Afficher les tâches en retard', None),
+            '11': ('Quitter', None)
         }
 
     def display(self):
