@@ -18,12 +18,15 @@ def ensure_directory(filepath: str) -> None:
 def read_json_file(filename: str) -> List[Dict[str, Any]]:
     """Read and parse JSON data from a file"""
     try:
+        if os.path.getsize(filename) == 0:  # Vérifie si le fichier est vide
+            return []  # Retourne une liste vide
         with open(filename, 'r', encoding='utf-8') as f:
             return json.load(f)
     except json.JSONDecodeError as e:
         raise FileAccessError(f"Invalid JSON format: {e}")
     except OSError as e:
         raise FileAccessError(f"Failed to read file: {e}")
+
 
 def write_json_file(filename: str, data: List[Dict[str, Any]]) -> None:
     """Write JSON data to a file"""

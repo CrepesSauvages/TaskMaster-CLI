@@ -16,7 +16,8 @@ class Menu:
             '8': ('Exporter les tâches', None),
             '9': ('Importer des tâches', None),
             '10': ('Afficher les tâches en retard', None),
-            '11': ('Quitter', None)
+            '11': ('Marquer une sous-tâche comme terminée', None),
+            '12': ('Quitter', None)
         }
 
     def display(self):

@@ -27,8 +27,13 @@ class TodoCLI:
         self.menu.set_command('8', self.export_tasks)
         self.menu.set_command('9', self.import_tasks)
         self.menu.set_command('10', self.show_overdue)
+        self.menu.set_command('11', self.toggle_subtask)
 
         
+    def toggle_subtask(self):
+        """Handle toggling subtask completion"""
+        self.list_tasks()
+        toggle_subtask_completion(self.manager)
 
     def toggle_task(self):
         """Handle toggling task completion status"""
@@ -189,7 +194,7 @@ class TodoCLI:
                 self.menu.display()
                 choice = input("\nChoisissez une option: ").strip()
                 
-                if choice == '11':
+                if choice == '12':
                     print("\nAu revoir!")
                     break
                     
