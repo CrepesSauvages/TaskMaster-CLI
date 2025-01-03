@@ -34,6 +34,7 @@ class Task:
     due_date: Optional[datetime]
     subtasks: List[SubTask]
     completed: bool = False
+    category_id: Optional[int] = None  # Ajout du champ category_id
 
     def __str__(self) -> str:
         status = "✓" if self.completed else " "

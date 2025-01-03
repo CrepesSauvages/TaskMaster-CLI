@@ -29,7 +29,6 @@ def read_json_file(filename: str) -> List[Dict[str, Any]]:
     except OSError as e:
         raise FileAccessError(f"Failed to read file: {e}")
 
-
 def write_json_file(filename: str, data: List[Dict[str, Any]]) -> None:
     """Write JSON data to a file"""
     try:
