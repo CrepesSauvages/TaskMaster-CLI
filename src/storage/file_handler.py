@@ -18,8 +18,10 @@ def ensure_directory(filepath: str) -> None:
 def read_json_file(filename: str) -> List[Dict[str, Any]]:
     """Read and parse JSON data from a file"""
     try:
-        if os.path.getsize(filename) == 0:  # Vérifie si le fichier est vide
-            return []  # Retourne une liste vide
+        if not os.path.exists(filename):  # Check if the file exists
+            return []  # Return an empty list if the file doesn't exist
+        if os.path.getsize(filename) == 0:  # Check if the file is empty
+            return []  # Return an empty list
         with open(filename, 'r', encoding='utf-8') as f:
             return json.load(f)
     except json.JSONDecodeError as e:

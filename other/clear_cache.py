@@ -10,5 +10,5 @@ def supprimer_pycache(dossier):
                 print(f'Supprimé : {chemin}')
 
 if __name__ == "__main__":
-    dossier_cible = os.path.dirname("./")
+    dossier_cible = os.path.dirname("../")
     supprimer_pycache(dossier_cible)
