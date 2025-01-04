@@ -2,3 +2,5 @@
 .codegpt
 data/*
 __pycache__/
+
+.codegpt
