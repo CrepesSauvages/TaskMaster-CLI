@@ -1,7 +1,4 @@
-
 .codegpt
 data/*
 __pycache__/
-
-.codegpt
 README_Disabled.md
