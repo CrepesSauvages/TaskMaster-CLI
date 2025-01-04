@@ -65,7 +65,7 @@ python main.py
 ```
 taskmaster-cli/
 ├── data/                 # Data storage
-├── todo_app/            
+├── src/            
 │   ├── core/            # Models and business logic
 │   │   └── auto_tagging/# Automatic tagging system
 │   ├── managers/        # Operation managers
