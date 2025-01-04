@@ -1,123 +1,129 @@
 # TaskMaster CLI
 
-Un gestionnaire de tâches en ligne de commande puissant et flexible, écrit en Python.
+A powerful and flexible command-line task manager written in Python.
 
-## 🌟 Fonctionnalités
+## 🌟 Features
 
-- ✅ Gestion complète des tâches (création, modification, suppression)
-- 📋 Sous-tâches avec suivi de progression
-- 🏷️ Tags avec suggestion automatique
-- 📊 Catégories personnalisables avec codes couleur
-- 📝 Système de notes attachées aux tâches
-- 📅 Dates limites et priorités
-- 📈 Statistiques détaillées
-- 📜 Historique complet des modifications
-- 🔍 Recherche et filtrage avancés
-- 📤 Import/Export des données
+- ✅ Complete task management (create, modify, delete)
+- 📋 Subtasks with progress tracking
+- 🏷️ Tags with automatic suggestion
+- 📊 Customizable categories with color coding
+- 📝 Task-attached notes system
+- 📅 Due dates and priorities
+- 📈 Detailed statistics
+- 📜 Complete modification history
+- 🔍 Advanced search and filtering
+- 📤 Data import/export
 
 ## 🚀 Installation
 
 ```bash
-# Cloner le repository
-git clone https://github.com/votre-username/taskmaster-cli.git
+# Clone the repository
+git clone https://github.com/your-username/taskmaster-cli.git
 cd taskmaster-cli
 
-# Créer un environnement virtuel (recommandé)
+# Create a virtual environment (recommended)
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
-# ou
+# or
 venv\Scripts\activate  # Windows
 
-# Installer les dépendances
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-## 💻 Utilisation
+## 💻 Usage
 
-Pour lancer l'application :
+To launch the application:
 
 ```bash
 python main.py
 ```
 
-### Menu Principal
+### Main Menu
 
-1. Ajouter une tâche
-2. Afficher toutes les tâches
-3. Marquer une tâche comme terminée
-4. Supprimer une tâche
-5. Ajouter une sous-tâche
-6. Rechercher des tâches
-7. Filtrer les tâches
-8. Exporter les tâches
-9. Importer des tâches
-10. Afficher les tâches en retard
-11. Statistiques
-12. Trier les tâches
-13. Marquer une sous-tâche comme terminée
-14. Voir l'historique d'une tâche
-15. Gérer les catégories
-16. Gérer les notes
-17. Quitter
+1. Add task
+2. Show all tasks
+3. Mark task as complete
+4. Delete task
+5. Add subtask
+6. Search tasks
+7. Filter tasks
+8. Export tasks
+9. Import tasks
+10. Show overdue tasks
+11. Statistics
+12. Sort tasks
+13. Mark subtask as complete
+14. View task history
+15. Manage categories
+16. Manage notes
+17. Quit
 
-## 📁 Structure du Projet
+## 📁 Project Structure
 
 ```
 taskmaster-cli/
-├── data/                 # Stockage des données
+├── data/                 # Data storage
 ├── todo_app/            
-│   ├── core/            # Modèles et logique métier
-│   │   └── auto_tagging/# Système de tags automatiques
-│   ├── managers/        # Gestionnaires des opérations
-│   ├── storage/         # Gestion du stockage
-│   └── ui/              # Interface utilisateur
-└── main.py              # Point d'entrée
+│   ├── core/            # Models and business logic
+│   │   └── auto_tagging/# Automatic tagging system
+│   ├── managers/        # Operation managers
+│   ├── storage/         # Storage management
+│   └── ui/              # User interface
+└── main.py              # Entry point
 ```
 
-## 🎯 Fonctionnalités Détaillées
+## 🎯 Detailed Features
 
-### Système de Tags Automatiques
-Le système analyse le titre et la description des tâches pour suggérer automatiquement des tags pertinents basés sur des mots-clés prédéfinis.
+### Automatic Tagging System
 
-### Catégories
-- Création de catégories avec codes couleur
-- Organisation hiérarchique (catégories et sous-catégories)
-- Filtrage et tri par catégorie
+The system analyzes task titles and descriptions to automatically suggest relevant tags based on predefined keywords.
+
+### Categories
+
+- Create categories with color codes
+- Hierarchical organization (categories and subcategories)
+- Filter and sort by category
 
 ### Notes
-- Ajout de notes détaillées aux tâches
-- Historique des modifications
-- Visualisation rapide dans la liste des tâches
 
-### Statistiques
-- Taux de complétion
-- Répartition par priorité
-- Tags les plus utilisés
-- Analyse des tâches en retard
+- Add detailed notes to tasks
+- Modification history
+- Quick view in task list
 
-## 📊 Stockage des Données
+### Statistics
 
-Les données sont stockées dans des fichiers JSON dans le dossier `data/` :
-- `tasks.json` : Tâches et sous-tâches
-- `categories.json` : Catégories
-- `notes.json` : Notes
-- `history.json` : Historique des modifications
+- Completion rate
+- Priority distribution
+- Most used tags
+- Overdue task analysis
 
-## 🤝 Contribution
+## 📊 Data Storage
 
-Les contributions sont les bienvenues ! N'hésitez pas à :
-1. Fork le projet
-2. Créer une branche (`git checkout -b feature/amazing-feature`)
-3. Commit vos changements (`git commit -m 'Add amazing feature'`)
-4. Push sur la branche (`git push origin feature/amazing-feature`)
-5. Ouvrir une Pull Request
+Data is stored in JSON files in the `data/` folder:
+
+- `tasks.json`: Tasks and subtasks
+- `categories.json`: Categories
+- `notes.json`: Notes
+- `history.json`: Modification history
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+
+1. Fork the project
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## 📝 License
 
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-## 🙏 Remerciements
+## 🙏 Acknowledgments
 
-- Inspiré par les meilleures pratiques de gestion de tâches
-- Utilise les principes SOLID et le design pattern MVC
-- Interface colorée grâce à ANSI colors
+- Inspired by task management best practices
+- Uses SOLID principles and MVC design pattern
+- Colorful interface using ANSI colors
