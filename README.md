@@ -110,7 +110,7 @@ Data is stored in JSON files in the `data/` folder:
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to:
+Contributions are welcome!
 
 1. Fork the project
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -121,9 +121,3 @@ Contributions are welcome! Feel free to:
 ## 📝 License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
-
-## 🙏 Acknowledgments
-
-- Inspired by task management best practices
-- Uses SOLID principles and MVC design pattern
-- Colorful interface using ANSI colors
