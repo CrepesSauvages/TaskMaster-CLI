@@ -4,7 +4,7 @@ Formatage de l'affichage des tâches
 from datetime import datetime
 from typing import List
 from ..core.task import Task
-from .colors import Colors, colorize, success, warning
+from .colors import Colors, colorize, success, warning, info
 
 def format_task(task: Task) -> str:
     """Formate l'affichage d'une tâche"""

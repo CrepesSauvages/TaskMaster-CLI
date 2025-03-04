@@ -3,7 +3,7 @@ Opérations sur les catégories dans l'interface CLI
 """
 from typing import Optional
 from ..managers.category_manager import CategoryManager
-from .colors import Colors, colorize, success, error, info, header
+from .colors import Colors, colorize, success, error, warning, info, header
 
 def display_categories(manager: CategoryManager) -> None:
     """Affiche toutes les catégories"""
